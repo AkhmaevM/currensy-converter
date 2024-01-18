@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="Currency Converter" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">Currency Converter</h1>
+            <p class="header__description">Check live rates, set rate alerts, receive notifications and more.</p>
+        </header>
+        <main class="main">
+            <form action="" class="main__converter">
+                <div class="main__amount">
+                    <label class="main__subtitle">Amout</label>
+                    <div class="main__currency">
+                        <img src="#" alt="Currency`s flag">
+                        <select name="Currency" id="">
+                            <option value="RUB">RUB</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+
+                        <input type="number" placeholder="0.00" required name="price" min="0" value="0" step="0.01">
+                    </div>
+                </div>
+
+                <div class="main__line">
+                    <button class="main__btn"><img src="" alt=""></button>
+                </div>
+                
+                <div class="main__amount">
+                    <label class="main__subtitle">Converted Amount</label>
+                    <div class="main__currency">
+                        <img src="#" alt="Currency`s flag">
+                        <select name="Currency" id="">
+                            <option value="RUB">RUB</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+
+                        <input type="number" placeholder="0.00" required name="price" min="0" value="0" step="0.01">
+                    </div>
+                </div>
+            </form>
+        </main>        
+        <footer class="footer">
+            <p class="footer__rate"></p>
+            <div class="footer__const">
+            <p class="footer__amout"></p>
+            <p class="footer__convertered"></p>
+            </div>
+        </footer>
+        <script src="./scripts/index.js" async defer></script>
+    </body>
+</html>
